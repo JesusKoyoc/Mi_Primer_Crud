@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Mi primer CRUD</title>
+
+    <!-- Likear o implementar bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+</head>
+
+
+
+<body>
+
+    <!-- El DIV servira para la tabal -->
+    >
+    <div class="container mt-4"> <!-- Contenedor con margin-top de 4 -->
+        <table class="table"><!--  TABLA -->
+
+            <thead><!-- Encabezado de la tabla -->
+
+                <tr>
+                    <th>Id musica</th>
+                    <th>Nombre cancion</th>
+                    <th>Artisa</th>
+                    <th>Genero</th>
+                    <th>Duracion_cancion</th>
+                    <th>Acciones</th>
+                </tr>
+
+
+            </thead>
+            <tbody> <!--  CUERPO de la tabla -->
+
+                <!-- Llama a los atributos de la clase Musica, para eso usa musica seguido de punto y el atirbuto -->
+                <tr th:each="musica : ${musicas}">
+                    <td th:text="${musica.id_musica}"></td>
+                    <td th:text="${musica.nombre_cancion}"></td>
+                    <td th:text="${musica.artista}"></td>
+                    <td th:text="${musica.genero_cancion}"></td>
+                    <td th:text="${musica.duracion_cancion}"></td>
+
+                    <!-- Botoenes -->
+                    <a class="btn btn-warning">Editar</a>
+                    <a class="btn btn-danger">Eliminar</a>
+                </tr>
+                
+                    
+    
+            </tbody>
+
+
+        </table>
+    </div>
+
+</body>
+
+</html>
