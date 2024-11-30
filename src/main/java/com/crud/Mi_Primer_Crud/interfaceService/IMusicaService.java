@@ -11,6 +11,6 @@ public interface IMusicaService {
 
     public List<Musica> listar();
     public Optional<Musica>listarById(int id);
-    public int save(Musica musica);
+    public int guardar(Musica musica);
     public void delate(int id);
 }

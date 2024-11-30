@@ -28,17 +28,25 @@ public class MusicaService implements IMusicaService{
 
     @Override
     public Optional<Musica> listarById(int id) {
-        return null;
+        return data.findById(id); // lista por id
     }
 
     @Override
-    public int save(Musica musica) {
-        return 0;
+    public int guardar(Musica m) {
+        int resp=0;
+        Musica musica = data.save(m);
+
+        // Validar
+        if(!musica.equals(null)) {
+            resp=1;
+        }
+        
+        return resp;
     }
 
     @Override
     public void delate(int id) {
-        return ;
-    }
+        data.deleteById(id);;
 
+    }
 }
