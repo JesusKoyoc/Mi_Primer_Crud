@@ -33,7 +33,7 @@ public class Musica {
     public Musica() {
     }
 
-    // Constructor no nulo
+    // Constructor no nulo Inicalizar las
     public Musica(int id_musica, String nombre_cancion, String artista, String duracion_cancion,
             String genero_cancion) {
         this.id_musica = id_musica;
@@ -44,6 +44,8 @@ public class Musica {
     }
 
     // Metodo getter y setter de los atributos
+    // Metodo getter: obtener el varlor de la varible
+    // Metodo setter: asina valor 
     public int getId_musica() {
         return id_musica;
     }
@@ -83,10 +85,4 @@ public class Musica {
     public void setGenero_cancion(String genero_cancion) {
         this.genero_cancion = genero_cancion;
     }
-    
-    
-    
-
-    
-
 }

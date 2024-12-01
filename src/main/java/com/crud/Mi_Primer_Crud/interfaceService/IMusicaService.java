@@ -9,8 +9,8 @@ import com.crud.Mi_Primer_Crud.modelo.Musica;
 
 public interface IMusicaService {
 
-    public List<Musica> listar();
-    public Optional<Musica>listarById(int id);
-    public int guardar(Musica musica);
-    public void delate(int id);
+    public List<Musica> listar(); // READ (Consultar)
+    public Optional<Musica>listarById(int id); // Buscar
+    public int guardar(Musica musica); // CREATE
+    public void delate(int id); 
 }

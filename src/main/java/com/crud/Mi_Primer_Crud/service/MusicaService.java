@@ -26,6 +26,7 @@ public class MusicaService implements IMusicaService{
         return (List<Musica>)data.findAll(); // findAll viene de CrudRepository. Retorna una lista de musica
     }
 
+    // Optional sirve para saber si HAY o NO HAY valar y no recibir valores NULOS
     @Override
     public Optional<Musica> listarById(int id) {
         return data.findById(id); // lista por id

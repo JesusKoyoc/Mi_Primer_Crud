@@ -55,7 +55,6 @@ public class Controlador {
         } else {
             return "redirect:/listar";
         }
-            
         return "form";
     }
 
@@ -66,6 +65,4 @@ public class Controlador {
         service.delate(id);
         return "redirect:/listar"; // redirecciona a pestaña listar
     }
-
-
 }

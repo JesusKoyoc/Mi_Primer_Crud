@@ -1,4 +1,4 @@
-// Funcion para la alerta eliminar
+// Funcion para la enviar una alerta de  eliminar
 function mensajeEliminar(id) {
     swal({
         title: "¿Estás seguro de eliminar el registro?",
